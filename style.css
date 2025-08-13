@@ -1,0 +1,832 @@
+@font-face {
+  font-family: 'Prometo';
+  src: url('fonts/Prometo-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Prometo';
+  src: url('fonts/Prometo-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Prometo';
+  src: url('fonts/Prometo-Bold.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+/* Add more font weights/styles as needed */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+font-family: 'Prometo', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: white;
+  overflow-x: hidden;
+}
+
+
+/* Header/Navigation */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 10px 0;
+  background-color: #0a2240;
+  position: relative
+}
+
+.logo {
+  margin: 0 left;
+  margin-left: 10px;
+  height: 50px;
+  width: 40%
+}
+.logo-img {
+width: 100%;
+height: 100%;
+  object-fit: cover;
+}
+
+.nav-buttons{
+
+  display: none;
+}
+
+.nav-buttons .btn{
+  padding: 8px 16px;
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('./images/Hitbet-mobile.webp');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 73vh;
+  width: 100%;
+  position: relative;
+ 
+
+}
+
+.hero-buttons .btn {
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons .left{
+   animation: pulseLeft 2.5s infinite alternate;;
+}
+
+.hero-buttons .right{
+   animation: pulseRight 2.5s infinite alternate;;
+}
+
+
+.hero-buttons {
+  display: flex;
+  position: relative;
+  top: 58vh;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  padding: 20px 0;
+  
+}
+
+.hero-buttons .btn {
+  text-align: center;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+
+
+
+/* Buttons */
+
+.btn-primary {
+
+background-color: #f7e74e;
+color: #0a2240;
+  padding: 18px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: glowPulse;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(255, 98, 0, 0.4);
+  color: #0a2240;
+}
+
+.btn-secondary {
+  background:#0a2240 ;
+color: #f7e74e;
+  padding: 18px 20px;
+  border: 1px solid #b5f309;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-secondary:hover {
+
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Steps Section - Stepper Style */
+.steps-section {
+  padding: 100px 0;
+    background: #0a2240;
+}
+
+.steps-main-title {
+  text-align: center;
+  font-family: 'Prometo', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  line-height: 1.2;
+}
+
+
+.stepper-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+
+}
+
+.stepper-step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Step Circle */
+.step-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #f7e74e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ font-family: 'Prometo', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #0a2240;
+  margin-bottom: 30px;
+  border: 1px solid white;
+
+}
+     
+
+/* Step Content */
+.step-content-stepper {
+  max-width: 280px;
+  padding: 0 15px;
+}
+
+.step-title-stepper {
+  font-family: 'Prometo', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  line-height: 1.3;
+}
+
+.step-description-stepper {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.step-btn-stepper {
+  font-size: 1rem;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: glowPulse 3s infinite;
+  border-radius: 25px;
+  font-weight: 600;
+  width: 200px;
+ 
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/* Bonus Cards Section */
+.bonus-section {
+  padding: 100px 0;
+  background: #0b1a3d;
+  position: relative;
+}
+
+.bonus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 2fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.section-title {
+  text-align: center;
+ font-family: 'Prometo', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  border-radius: 2px;
+   background:#f7e74e;
+
+}
+.bonus-card {
+  background: #00257a;
+  border-radius: 25px;
+  padding: 50px 40px;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bonus-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 30px 60px #f7e74e;
+}
+
+.bonus-ribbon {
+  position: absolute;
+  top: 25px;
+  right: -50px;
+  color: white;
+  padding: 10px 60px;
+  transform: rotate(45deg);
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.bonus-ribbon.casino {
+  background: linear-gradient(45deg, #8e44ad, #9b59b6);
+}
+
+.bonus-ribbon.sports {
+  background:  #00bd4f;
+}
+
+.bonus-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.bonus-amount {
+ font-family: 'Prometo', sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #f7e74e;
+  margin-bottom: 10px;
+  text-shadow: 0 0 30px #ffa128;
+  -webkit-text-stroke: 1px white;
+  animation: strokeColorChange 2s infinite;
+}
+
+.bonus-extra {
+  font-size: 1.5rem;
+  color: #ffa128;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.bonus-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* Footer */
+.footer {
+  background: #0a2240;
+  color: white;
+  padding: 60px 0 30px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  max-width: 40px;
+
+}
+
+
+.footer-logo-container{
+  height: 80px;
+  width: 50%;
+  margin: 0 auto;
+  
+}
+.footer-logo-img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+
+/* Responsive Design */
+
+
+@media (min-width: 1320px){
+ 
+   .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  background-color: #0a2240;
+  position: relative
+}
+
+.logo {
+
+  margin-left: 10px;
+  height: 50px;
+  width: 10%
+}
+  .hero-section {
+    background-image: url('./images/Hitbet-desktop.webp');
+    background-size: cover; 
+    background-position:top center;
+    background-repeat: no-repeat;
+   height:80vh;
+    width: 100%;
+ 
+  }
+
+  .nav-buttons{
+  display: flex;
+  margin-right: 20px;
+  gap: 10px;
+}
+.hero-buttons{
+  display: none;
+}
+
+.bonus-grid {
+  grid-template-columns: repeat(auto-fit, minmax(40%, 2fr));
+  
+}
+ 
+  .bonus-box {
+    width: 20%;
+  }
+
+ .stepper-steps {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+   
+    width: 100%;
+  }
+
+  .stepper-step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .step-content-stepper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .step-btn-stepper {
+    margin-top: auto; 
+  }
+
+  .footer-logo-container{
+  height: 80px;
+  width: 10%;
+  margin: 0 auto;
+  
+}
+.footer-logo-img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+}
+/* Laptop Screen */
+}
+
+
+@media (min-width: 1024px) and (max-width: 1320px) {
+ 
+ .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  background-color: #0a2240;
+  position: relative
+}
+
+.logo {
+
+  margin-left: 10px;
+  height: 50px;
+  width: 10%
+}
+.nav-buttons{
+  display: flex;
+  margin-right: 20px;
+  gap: 10px;
+}
+  .hero-section {
+    background-image: url('./images/Hitbet-desktop.webp');
+    background-size: cover; 
+    background-position:top center;
+    background-repeat: no-repeat;
+   height:40vh;
+    width: 100%;
+ 
+  }
+
+.hero-buttons{
+  display: none;
+}
+.bonus-grid {
+  grid-template-columns: repeat(auto-fit, minmax(40%, 2fr));
+  
+}
+ 
+  .bonus-box {
+    width: 20%;
+  }
+
+ .stepper-steps {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+   
+    width: 100%;
+  }
+
+  .stepper-step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+  }
+
+  .step-content-stepper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .step-btn-stepper {
+    margin-top: auto; 
+  }
+}
+
+
+/*Tablet screen*/
+@media (min-width: 767px) and (max-width: 1024px) {
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  padding: 15px 0;
+  background-color: #0a2240;
+  position: relative
+}
+
+.logo {
+
+  margin-left: 10px;
+  height: 60px;
+  width: 20%
+}
+.nav-buttons{
+  display: flex;
+  margin-right: 20px;
+  gap: 10px;
+}
+ .hero-section {
+  background-image: url('./images/Hitbet-desktop.webp');
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  width: 100%;
+  position: relative;
+
+}
+
+.hero-buttons{
+  display: none;
+}
+  
+  .stepper-steps {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+  }
+
+  .stepper-step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .step-content-stepper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .step-btn-stepper {
+    margin-top: auto; 
+  }
+ .section-title {
+    font-size: 2.2rem;
+  }
+
+  /* Stepper Mobile */
+  .steps-main-title {
+    font-size: 2.2rem;
+    margin-bottom: 60px;
+  }
+
+  .stepper-steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .stepper-line {
+    display: none;
+  }
+
+  .step-circle {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  .step-content-stepper {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  
+  .step-title-stepper {
+    font-size: 1.4rem;
+  }
+
+  .step-description-stepper {
+    font-size: 1rem;
+  }
+
+  .step-btn-stepper {
+    font-size: 0.9rem;
+    padding: 12px 20px;
+  }
+  
+  .bonus-grid {
+  grid-template-columns: repeat(auto-fit, minmax(40%, 2fr));
+  
+}
+}
+
+@media (max-width: 767px) {
+
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  /* Stepper Mobile */
+  .steps-main-title {
+    font-size: 2.2rem;
+    margin-bottom: 60px;
+  }
+
+  .stepper-steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .stepper-line {
+    display: none;
+  }
+
+  .step-circle {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  .step-content-stepper {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  
+  .step-title-stepper {
+    font-size: 1.4rem;
+  }
+
+  .step-description-stepper {
+    font-size: 1rem;
+  }
+
+  .step-btn-stepper {
+    font-size: 0.9rem;
+    padding: 12px 20px;
+  }
+}
+
+
+@media (min-width: 503px) and (max-width: 767px){
+
+  .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  padding: 10px 0;
+  background-color: #0a2240;
+  position: relative
+}
+
+.logo {
+
+  margin-left: 10px;
+  height: 50px;
+  width: 20%
+}
+.nav-buttons{
+  display: flex;
+  margin-right: 20px;
+  gap: 10px;
+  padding: 5px 0;
+}
+ .hero-section {
+  background-image: url('./images/Hitbet-mobile.webp');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 120vh;
+  width: 100%;
+  position: relative;
+
+}
+
+.hero-buttons{
+  display: none;
+}
+}
+
+
+/* Animations */
+
+
+
+@keyframes pulseLeft {
+  0% { box-shadow: 0 0 5px #fea703, 0 0 10px #fea703; }
+  100% { box-shadow: 0 0 10px #fea703, 0 0 20px #fea703, 0 0 35px #fea703; }
+}
+
+@keyframes pulseRight {
+  0% { box-shadow: 0 0 5px #0a2240, 0 0 10px #0a2240; }
+  100% { box-shadow: 0 0 15px #0a2240, 0 0 30px #0a2240, 0 0 45px #0a2240; }
+}
+@keyframes fadeInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes glowPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 5px #f7e74e  , 0 0 5px #f7e74e  , 0 0 10px #f7e74e  ;
+    transform: scale(1);
+  }
+  50% {
+   
+    transform: scale(1.10);
+  }
+ 
+}
