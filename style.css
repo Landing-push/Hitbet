@@ -1,24 +1,4 @@
-@font-face {
-  font-family: 'Prometo';
-  src: url('fonts/Prometo-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: 'Prometo';
-  src: url('fonts/Prometo-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Prometo';
-  src: url('fonts/Prometo-Bold.woff2') format('woff2');
-  font-weight: 900;
-  font-style: normal;
-}
-/* Add more font weights/styles as needed */
 
 
 * {
@@ -28,7 +8,7 @@
 }
 
 body {
-font-family: 'Prometo', sans-serif;
+ font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   color: #333;
   background: white;
@@ -182,7 +162,6 @@ color: #f7e74e;
 
 .steps-main-title {
   text-align: center;
-  font-family: 'Prometo', sans-serif;
   font-size: 3.2rem;
   font-weight: 900;
   color: white;
@@ -221,7 +200,6 @@ color: #f7e74e;
   display: flex;
   align-items: center;
   justify-content: center;
- font-family: 'Prometo', sans-serif;
   font-size: 2.5rem;
   font-weight: 900;
   color: #0a2240;
