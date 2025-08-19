@@ -313,7 +313,7 @@ color: #f7e74e;
   top: 25px;
   right: -50px;
   color: white;
-  padding: 10px 60px;
+  padding: 10px 70px;
   transform: rotate(45deg);
   font-weight: 700;
   font-size: 1rem;
@@ -327,6 +327,8 @@ color: #f7e74e;
 
 .bonus-ribbon.sports {
   background:  #00bd4f;
+    background: linear-gradient(45deg,  #00bd4f, #01a746 );
+     
 }
 
 .bonus-title {
