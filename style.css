@@ -166,7 +166,7 @@ color: #f7e74e;
   font-weight: 900;
   color: white;
   margin-bottom: 80px;
-  text-transform: uppercase;
+
   letter-spacing: 2px;
   text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
   line-height: 1.2;
@@ -462,8 +462,8 @@ color: #f7e74e;
 
 
 .footer-logo-container{
-  height: 80px;
-  width: 50%;
+  height: auto;
+  width: 30%;
   margin: 0 auto;
   
 }
@@ -477,7 +477,7 @@ object-fit: cover;
 /* Responsive Design */
 
 
-@media (min-width: 1320px){
+@media (min-width: 1400px){
  
    .navbar {
   width: 100%;
@@ -498,9 +498,9 @@ object-fit: cover;
   .hero-section {
     background-image: url('./images/Hitbet-desktop.webp');
     background-size: cover; 
-    background-position:top center;
+    background-position:left center;
     background-repeat: no-repeat;
-   height:80vh;
+   height:85vh;
     width: 100%;
  
   }
@@ -549,16 +549,11 @@ object-fit: cover;
   }
 
   .footer-logo-container{
-  height: 80px;
   width: 10%;
   margin: 0 auto;
   
 }
-.footer-logo-img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-}
+
 .bonus-list li {
   display: flex;
   align-items: center;
@@ -572,7 +567,7 @@ object-fit: cover;
 
 
 
-@media (min-width: 1024px) and (max-width: 1320px) {
+@media (min-width: 1024px) and (max-width: 1400px) {
  
  .navbar {
   width: 100%;
@@ -598,9 +593,9 @@ object-fit: cover;
   .hero-section {
     background-image: url('./images/Hitbet-desktop.webp');
     background-size: cover; 
-    background-position:top center;
+    background-position:left center;
     background-repeat: no-repeat;
-   height:40vh;
+   height:62vh;
     width: 100%;
  
   }
@@ -647,6 +642,11 @@ object-fit: cover;
   .bonus-list li {
    width: 70%;
   margin: 0 auto;
+  }
+  .footer-logo-container{
+  width: 15%;
+  margin: 0 auto;
+  
 }
 }
 
@@ -681,7 +681,7 @@ object-fit: cover;
   background-size: cover;
   background-position: left center;
   background-repeat: no-repeat;
-  height: 40vh;
+  height: 45vh;
   width: 100%;
   position: relative;
 
@@ -762,6 +762,13 @@ object-fit: cover;
   
   .bonus-grid {
   grid-template-columns: repeat(auto-fit, minmax(40%, 2fr));
+  
+}
+
+.footer-logo-container{
+  height: auto;
+  width: 15%;
+  margin: 0 auto;
   
 }
 }
@@ -847,7 +854,7 @@ object-fit: cover;
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  height: 120vh;
+  height: 90vh;
   width: 100%;
   position: relative;
 
