@@ -404,6 +404,9 @@ color: #f7e74e;
 .bonus-list li:hover {
   transform: translateX(10px);
 }
+.btn-sport{
+    font-size: 15px;
+}
 
 .fa-check {
   color: #4caf50; /* Green for checkmark */
